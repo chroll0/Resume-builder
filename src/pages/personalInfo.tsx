@@ -96,7 +96,7 @@ const PersonalInfo = () => {
         <Header header="ᲞᲘᲠᲐᲓᲘ ᲘᲜᲤᲝ" page={1} />
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="py-14 h-full flex flex-col justify-between"
+          className="py-14 flex flex-col justify-between gap-8"
         >
           <div className="flex flex-col gap-8">
             <div className="flex gap-10">
@@ -112,7 +112,7 @@ const PersonalInfo = () => {
                     {...register("name", {
                       onChange: (e) => handleChange("name", e.target.value),
                     })}
-                    className={`py-2 px-4 w-full rounded-[4px] text-input_text border border-border_gray ${
+                    className={`py-2 pl-4 pr-8 w-full rounded-[4px] text-input_text border border-border_gray ${
                       errors.name
                         ? "inputError"
                         : watch("name")
@@ -156,7 +156,7 @@ const PersonalInfo = () => {
                       onChange: (e) =>
                         handleChange("last_name", e.target.value),
                     })}
-                    className={`py-2 px-4 w-full rounded-[4px] text-input_text border border-border_gray ${
+                    className={`py-2 pl-4 pr-8 w-full rounded-[4px] text-input_text border border-border_gray ${
                       errors.last_name
                         ? "inputError"
                         : watch("last_name")
@@ -251,7 +251,7 @@ const PersonalInfo = () => {
                   {...register("email", {
                     onChange: (e) => handleChange("email", e.target.value),
                   })}
-                  className={`py-2 px-4 w-full rounded-[4px] text-input_text border border-border_gray ${
+                  className={`py-2 pl-4 pr-8 w-full rounded-[4px] text-input_text border border-border_gray ${
                     errors.email
                       ? "inputError"
                       : watch("email")
@@ -294,7 +294,7 @@ const PersonalInfo = () => {
                   {...register("phone_num", {
                     onChange: (e) => handleChange("phone_num", e.target.value),
                   })}
-                  className={`py-2 px-4 w-full rounded-[4px] text-input_text border border-border_gray ${
+                  className={`py-2 pl-4 pr-8 w-full rounded-[4px] text-input_text border border-border_gray ${
                     errors.phone_num
                       ? "inputError"
                       : watch("phone_num")

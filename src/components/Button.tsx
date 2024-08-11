@@ -6,7 +6,7 @@ const Button = ({ action, text, navigate }: buttonProps) => {
     <Link to={navigate || "/"}>
       <button
         onClick={action}
-        className="flexCenter w-[151px] h-[48px] bg-button_purple rounded-[4px] text-white text-[16px] font-medium"
+        className="flexCenter sm:w-[151px] w-[115px] h-[48px] bg-button_purple rounded-[4px] text-white sm:text-[16px] text-[14px] font-medium"
       >
         {text}
       </button>

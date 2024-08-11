@@ -26,7 +26,7 @@ const SideResume = () => {
   } = userProfile;
 
   return (
-    <div className="flex flex-col flex-1 min-h-full justify-between gap-6 py-10 md:px-14 px-6 bg-white">
+    <div className="flex flex-col flex-1 min-h-full justify-between gap-10 py-10 px-10 bg-white">
       <div className="h-full">
         <div className="w-full flex justify-between items-center 2xl:items-start 2xl:flex-row flex-col-reverse gap-6 font-normal">
           <div className="flex flex-col gap-3 flex-[2/3]">
@@ -81,10 +81,9 @@ const SideResume = () => {
                 ᲒᲐᲛᲝᲪᲓᲘᲚᲔᲑᲐ
               </h1>
               <div>
-                <div className="font-medium mb-1 flex gap-2">
-                  <h4>{position},</h4>
-                  <span>{employer}</span>
-                </div>
+                <h4 className="font-medium mb-1">
+                  {position}, {employer}
+                </h4>
                 {date_started && (
                   <span className="text-[#909090] italic">
                     {date_started} - {date_finished}
@@ -103,13 +102,12 @@ const SideResume = () => {
               ᲒᲐᲜᲐᲗᲚᲔᲑᲐ
             </h1>
             <div>
-              <div className="font-medium mb-1 flex gap-2">
-                <h4>{university},</h4>
-                <span>{degree}</span>
-              </div>
+              <h4 className="font-medium mb-1">
+                {university}, {degree}
+              </h4>
               <span className="text-[#909090] italic">{finish_date}</span>
             </div>
-            <p>{educationDescription}</p>
+            <p className="text-justify">{educationDescription}</p>
           </div>
         )}
       </div>

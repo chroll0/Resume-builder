@@ -55,7 +55,7 @@ const Experience = () => {
         <Header header="ᲒᲐᲛᲝᲪᲓᲘᲚᲔᲑᲐ" page={2} />
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="py-14 h-full flex flex-col justify-between"
+          className="py-14 flex flex-col justify-between"
         >
           <div className="flex flex-col gap-8">
             <div>
@@ -70,7 +70,7 @@ const Experience = () => {
                   {...register("position", {
                     onChange: (e) => handleChange("position", e.target.value),
                   })}
-                  className={`py-2 px-4 w-full rounded-[4px] text-input_text border border-border_gray ${
+                  className={`py-2 pl-4 pr-8 w-full rounded-[4px] text-input_text border border-border_gray ${
                     errors.position
                       ? "inputError"
                       : watch("position")
@@ -113,7 +113,7 @@ const Experience = () => {
                   {...register("employer", {
                     onChange: (e) => handleChange("employer", e.target.value),
                   })}
-                  className={`py-2 px-4 w-full rounded-[4px] text-input_text border border-border_gray ${
+                  className={`py-2 pl-4 pr-8 w-full rounded-[4px] text-input_text border border-border_gray ${
                     errors.employer
                       ? "inputError"
                       : watch("employer")
@@ -235,7 +235,7 @@ const Experience = () => {
               )}
             </div>
           </div>
-          <div className="w-full h-[1px] bg-line_bg_black my-4"></div>
+          <div className="w-full h-[1px] bg-line_bg_black my-8"></div>
           <button
             type="button"
             className="bg-button_blue px-5 py-3 rounded-[4px] text-[16px] text-white max-w-[300px] mb-12"
@@ -244,7 +244,7 @@ const Experience = () => {
             მეტი გამოცდილების დამატება
           </button>
 
-          <div className="flex justify-between">
+          <div className="flex justify-between gap-2">
             <Button text="ᲣᲙᲐᲜ" navigate="/personalInfo_1" />
             <Button text="ᲨᲔᲛᲓᲔᲒᲘ" action={handleSubmit(onSubmit)} />
           </div>

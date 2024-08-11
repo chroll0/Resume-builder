@@ -12,7 +12,7 @@ const Resume = () => {
   return (
     <div className="relative">
       <div className="section flex justify-center px-4">
-        <div className="w-full max-w-[822px] border border-black my-10">
+        <div className="w-full max-w-[822px] border border-slate-400 my-10">
           <SideResume />
         </div>
         {isVisible && (

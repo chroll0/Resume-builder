@@ -56,7 +56,7 @@ const Education = () => {
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="py-14 h-full flex flex-col justify-between"
+          className="py-14 flex flex-col justify-between"
         >
           <div className="flex flex-col gap-8">
             <div>
@@ -72,7 +72,7 @@ const Education = () => {
                       onChange: (e) =>
                         handleChange("university", e.target.value),
                     })}
-                    className={`py-2 px-4 w-full rounded-[4px] text-input_text border border-border_gray ${
+                    className={`py-2 pl-4 pr-8 w-full rounded-[4px] text-input_text border border-border_gray ${
                       errors.university
                         ? "inputError"
                         : watch("university")
@@ -201,7 +201,7 @@ const Education = () => {
               )}
             </div>
           </div>
-          <div className="w-full h-[1px] bg-line_bg_black my-4"></div>
+          <div className="w-full h-[1px] bg-line_bg_black my-8"></div>
           <button
             type="button"
             className="bg-button_blue px-5 py-3 rounded-[4px] text-[16px] text-white max-w-[300px] mb-12"

@@ -28,7 +28,7 @@ input:focus {
     @apply w-full min-h-svh flex relative md:flex-row flex-col;
   }
   .sectionPadding {
-    @apply w-full md:py-12 py-8 lg:px-36 px-14;
+    @apply w-full md:py-12 py-8 xl:px-36 px-14;
   }
   .flexCenter {
     @apply flex items-center justify-center;
