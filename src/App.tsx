@@ -32,7 +32,6 @@ const App = () => {
   return (
     <AppContext.Provider value={contextValue}>
       <Routes>
-        <Route path="/" element={<Navigate to="/homePage" />} />
         <Route path="/homePage" element={<HomePage />} />
         <Route path="/personalInfo_1" element={<PersonalInfo />} />
         <Route path="/experience_2" element={<Experience />} />
